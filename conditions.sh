@@ -5,7 +5,7 @@
 N1=$1
 N2=$2
 
-if [ $N1 -ge $N2]
+if [ $N1 -ge $N2 ]
 then
     echo " Given number $N1 is greater than $N2 "
 else 

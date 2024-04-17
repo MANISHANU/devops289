@@ -32,4 +32,5 @@ else
     echo "Installation of Git...SUCCESS"
 fi
 
+exit 1
 echo "is script proceeding?"

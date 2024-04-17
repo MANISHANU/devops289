@@ -10,3 +10,4 @@ echo "Host Name :: $HOSTNAME "
 echo "Process id of current shell script :: $$ "
 sleep 30 &
 echo "Process id of last back ground command :: $! "
+echo "status of last exec command :: $? "

@@ -7,7 +7,7 @@
 GODS=('SHIV' 'RAM' 'KRISHN')
 
 echo "First God name is ${GODS[0]}"
-echo "Second God name is ${GODS[0]}"
-echo "Third God name is ${GODS[0]}"
+echo "Second God name is ${GODS[1]}"
+echo "Third God name is ${GODS[2]}"
 
 

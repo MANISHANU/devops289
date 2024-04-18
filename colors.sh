@@ -31,7 +31,7 @@ else
 fi 
 
 dnf install mysql -y &>>LOG_FILE
-VALIDTAE $? "Installing MYSQL "
+VALIDATAE $? "Installing MYSQL "
 
 dnf install git -y &>>LOG_FILE
-VALIDTAE $? "Installing GIT "
+VALIDATAE $? "Installing GIT "

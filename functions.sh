@@ -9,7 +9,7 @@ LOG_FILE=/tmp/$SCRIPT_NAME-$TIME_STAMP.log
 VALIDATE()
     {
      
-if [ $? -ne  0 ]
+if [ $1 -ne  0 ]
 then 
      echo "$2... Failed"
      exit 1

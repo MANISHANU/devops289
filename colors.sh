@@ -5,9 +5,9 @@ USERID=$(id -u)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 TIME_STAMP=$(date +%F-%H-%M-%S) 
 LOG_FILE=/tmp/$SCRIPT_NAME-$TIME_STAMP.log
-R="\e[31"
-G="\e[32"
-N="\e[0"
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 
 

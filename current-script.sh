@@ -1,7 +1,8 @@
 
 #!/bin/bash
 
-COURSE="DEVOPSs"
+COURSE="Devops"
+
 echo "Before calling other script :$COURSE"
 echo "process id of current script :$$"
 

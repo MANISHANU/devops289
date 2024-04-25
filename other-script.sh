@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-COURSE="DEVOPS"
+COURSE="AWS"
 
 echo "COURSE value from other script:$COURSE"
 echo "process id from other script:$$"

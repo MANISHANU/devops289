@@ -1,24 +1,26 @@
 #!/bin/bash
 
-set -e
+set -e 
 
 failure(){
-    echo "Failed at $1: $2"
+
+    echo "  Failed at:$1  with error-msg:$2 "
 }
 
-trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
+trap 'failure "${lineno}"  "${BASH_COMMAND}"' ERR
 
-USERID=$(id -u) #ERR
+USERID=$(id -u)
 
-if [ $USERID -ne 0 ]
-then
-    echo "Please run this script with root access."
-    exit 1 # manually exit if error comes.
+if[ $USERID -ne 0 ]
+then 
+   echo "Not a root user , Please run with root this cmd with access "
+   exit 1
 else
-    echo "You are super user."
-fi
+   echo "Your are root user"
+fi 
 
-dnf install mysfaffql -y
-dnf install git -y
+dnf install mysqll -y 
+dnf install git 
 
-echo "is script proceeding?"
+echo "Is sript proceeding"
+

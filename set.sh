@@ -7,7 +7,7 @@ failure(){
     echo "  Failed at:$1  with error-msg:$2 "
 }
 
-trap 'failure "${lineno}"  "$BASH_COMMAND" ' ERR
+trap 'failure ${LINENO}  "$BASH_COMMAND" ' ERR
 
 USERID=$(id -u)
 

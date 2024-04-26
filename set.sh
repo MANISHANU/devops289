@@ -11,7 +11,7 @@ trap 'failure "${lineno}"  "${BASH_COMMAND}"' ERR
 
 USERID=$(id -u)
 
-if[ $USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then 
    echo "Not a root user , Please run with root this cmd with access "
    exit 1

@@ -10,9 +10,9 @@ SOURCE_DIRECTORY=/tmp/app-logs
 
 if [-d SOURCE_DIRECTORY ]
 then 
-   echo -e " $G $SOURCE_DIRECTORY exist $N"
+   echo -e "$G $SOURCE_DIRECTORY exist $N"
 else
-   echo " $R $SOURCE_DIRECTORY doen't exit $N"
+   echo -e " $R $SOURCE_DIRECTORY doen't exit $N"
    exit 1
 fi
 

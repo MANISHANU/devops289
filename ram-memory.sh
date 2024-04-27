@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RAM_USAGE=$(free --mega -h )                                                                       ="" 
+RAM_USAGE=$(free --mega -h)                                                                       ="" 
 MESSAGE="" 
 
 while IFS= read -r line

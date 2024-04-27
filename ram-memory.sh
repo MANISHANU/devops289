@@ -1,7 +1,7 @@
 #!/bin/bash
 
-RAM_USAGE=$(free --mega -h)                                                                       ="" 
-MESSAGE="" 
+ RAM_USAGE=$(free --mega -h)
+ MESSAGE="" 
 
 while IFS= read -r line
 do

@@ -6,7 +6,7 @@ MESSAGE=""
 
 while IFS= read -r line
 do
-    AVL=$(echo $line | awk '{print $6}' | cut -d  "M" | tr -d " " )
+    AVL=$(echo $line | awk '{print $6}' | tr -d  "M" | tr -d " " )
     echo -e "AVL value: $AVL"
     if [ $AVL -lt $THRESHOLD ]
     then

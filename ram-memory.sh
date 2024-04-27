@@ -6,9 +6,7 @@ MESSAGE=""
 
 while IFS= read -r line
 do
-    RAM_USAGE=$(echo $line | )
-
-    if [[ $RAM_USAGE -lt $THRESHOLD ]]
+    if [ $RAM_USAGE -lt $THRESHOLD ]
     then
         MESSAGE=" Current available ram memory is less than threshold value: $AVL"
     fi

@@ -1,12 +1,12 @@
 #!/bin/bash
 
 RAM_USAGE=$(free --mega -h )
-THRESHOLD=500
+THRESHOLD=600
+MESSAGE="" 
 
 while IFS= read -r line
 do
-    AVL=$(echo $line |  awk -F " " '{print $6F}' |cut -d "M" -f1 )
-    
+    AVL=$(echo $line |  awk -F " " '{print $6F}' | cut -d "M" -f1 )
     if [ $AVL -le $THRESHOLD ]
     then
         MESSAGE=" Current available ram memory is less than threshold value: $AVL \n"

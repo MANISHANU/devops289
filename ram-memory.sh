@@ -11,7 +11,7 @@ do
     if [ $AVL -le $THRESHOLD ]
     then
         MESSAGE =" Current available ram memory is less than threshold value: $AVL \n"
-     rxit 1    
+     exit 1    
     fi
 done <<< $RAM_USAGE
 

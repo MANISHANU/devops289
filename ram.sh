@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RAM_USAGE=$(free --mega -h| awk -F " " '{print $6F}' | cut  -d  "M" )
+RAM_USAGE=$(free --mega -h| awk -F " " '{print $6F}' | cut -d "M" -f1 )
 THRESHOLD=600
 MESSAGE="" 
 

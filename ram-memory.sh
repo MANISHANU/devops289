@@ -6,10 +6,10 @@ MESSAGE=""
 
 while IFS= read -r line
 do
-    AVL=$(echo $line | awk -F " " '{print $6}' | cut -d "M" -f1 )
+    AVL=$(echo $line | awk -F " " '{print $6}' | tr -d 'M' )
     if [ $AVL -lt $THRESHOLD ]
     then
-        MESSAGE=" Current available ram memory is less than threshold value: $AVL \n"
+        MESSAGE=" Current available ram memory is less than threshold value: $AVL"
     fi
 done <<< $RAM_USAGE
 

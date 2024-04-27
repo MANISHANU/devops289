@@ -10,7 +10,7 @@ do
     echo -e "AVL value: $AVL"
     if [ $AVL -le $THRESHOLD ]
     then
-        MESSAGE =" Current available ram memory is less than threshold value: $AVL"   
+        MESSAGE=" Current available ram memory is less than threshold value: $AVL"   
     fi
 done <<< $RAM_USAGE
 
